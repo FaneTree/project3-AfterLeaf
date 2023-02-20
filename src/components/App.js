@@ -1,6 +1,5 @@
 import '../App.scss';
 
-
 import NavBar from './main/NavBar'
 import Content from './main/Content'
 import Instruction from './main/Instruction'
@@ -13,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className='page'>
           <NavBar />
           <Content />
           <Instruction />
