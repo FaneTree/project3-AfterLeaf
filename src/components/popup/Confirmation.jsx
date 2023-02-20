@@ -4,7 +4,7 @@ export default function Confirmation (props) {
     return (props.trigger) ? (
         <div className = 'popup'>
             <div className = 'popup-inner'>
-                <a><img src="https://i.ibb.co/2g5yDDs/vecteezy-x-png-transparent-9344493-556.png" alt="vecteezy-x-png-transparent-9344493-556" border="0"  width = '20' height = '20'/></a>
+                <a onClick = { props.exit } ><img src="https://i.ibb.co/2g5yDDs/vecteezy-x-png-transparent-9344493-556.png" alt="vecteezy-x-png-transparent-9344493-556" border="0"  width = '20' height = '20'/></a>
                 <div>
                     <h1>Done!</h1>
                     <p>You will receive an email to confirm that you signed up to the newsletter.</p>

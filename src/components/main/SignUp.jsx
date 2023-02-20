@@ -46,8 +46,8 @@ export default function SignUp () {
                 <button onClick = {_handleSignUp}>Sign up</button>
             </div>
             
-            <PopUp handle = {_handleConfirmation} trigger = {signUp} close = {_handleBack} />
-            <Confirmation handle = {_handleBack} trigger = {confirmation} /> 
+            <PopUp handle = {_handleConfirmation} trigger = {signUp} exit = {_handleBack} />
+            <Confirmation handle = {_handleBack} trigger = {confirmation} exit = {_handleBack} /> 
 
         </div>
     )
