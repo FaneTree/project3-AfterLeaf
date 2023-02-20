@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function PopUp () {
+export default function PopUp (props) {
     return (
         <div>
             <a><img src="https://i.ibb.co/2g5yDDs/vecteezy-x-png-transparent-9344493-556.png" alt="vecteezy-x-png-transparent-9344493-556" border="0"/></a>
+
             <div>
                 <h1>Thank you for signing up!</h1>
                 <div>
@@ -12,10 +13,11 @@ export default function PopUp () {
                 </div>
                 <p>All fileds are required and marked with an asterisk (*)</p>
             </div>
-            {/* <form onSubmit = { _handleSubmit }>
-                <textarea onInput= { _handleInput } value = { content }></textarea>
+
+            <form onSubmit = {props._handleConfirmation} >
+                {/* <textarea onInput= { _handleInput } value = { content }></textarea> */}
                 <input type = "submit" value ="Tell"/>
-            </form> */}
+            </form>
         </div>
     )
 }

@@ -1,17 +1,16 @@
 import '../App.css';
 
+
 import NavBar from './main/NavBar'
 import Content from './main/Content'
 import Instruction from './main/Instruction'
 import SignUp from './main/SignUp'
 import Footer from './main/Footer'
 
-import PopUp from './popup/PopUp'
-import Confirmation from './popup/Confirmation'
-
 import Admin from './admin/Admin'
 
 function App() {
+
   return (
     <div className="App">
       <div>

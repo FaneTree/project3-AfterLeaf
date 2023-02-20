@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Confirmation () {
+export default function Confirmation (props) {
     return (
         <div className = 'container-confirmation'>
             <a><img src="https://i.ibb.co/2g5yDDs/vecteezy-x-png-transparent-9344493-556.png" alt="vecteezy-x-png-transparent-9344493-556" border="0"/></a>
@@ -11,7 +11,7 @@ export default function Confirmation () {
                     <p>You will also receive one email a month containing your new sletter.</p>
                     <p>You can unsubscribe any time.</p>
                 </div>
-                <button>Close Window</button>
+                <button onClick = {props._handleBack}>Close Window</button>
             </div>
         </div>
     )
