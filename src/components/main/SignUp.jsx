@@ -1,6 +1,4 @@
-import React from "react";
-import Modal from "react-router-modal";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 import Confirmation from "../popup/Confirmation";
 import PopUp from "../popup/PopUp";
@@ -41,13 +39,13 @@ export default function SignUp () {
 
             <button onClick = {_handleSignUp}>Sign up</button>
 
-            <Modal open = {signUp} onClose = {_handleBack} >
+            {/* <Modal open = {signUp} onClose = {_handleBack} >
                 <PopUp handle = {_handleConfirmation} />
             </Modal>
 
             <Modal open = {confirmation} onClose = {_handleBack} >
                 <Confirmation handle = {_handleBack}/>    
-            </Modal>
+            </Modal> */}
         </div>
     )
 }
