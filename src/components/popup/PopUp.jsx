@@ -37,7 +37,7 @@ export default function PopUp (props) {
 
             // A name cannot contain a number
             if ( /^\d+$/.test(firstname) ) {
-                formErrors.firstname = 'First name cannot contain a number';
+                formErrors.firstname = 'First name cannot contain numbers or special characters';
             }
             if (/^\d+$/.test(lastname)) {
                 formErrors.lastname = 'Last name cannot contain a number';
