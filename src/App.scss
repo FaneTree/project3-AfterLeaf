@@ -7,13 +7,6 @@ $button-color: black;
     font-family: 'Inter', sans-serif;
 }
 
-button {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 12px;
-}
-
 .nav {
     padding: 18px 35px;
     color: $brand-color;
@@ -40,12 +33,33 @@ button {
         margin: 0;
         font-size: 18px;
     }
+
+    .mobile-menu-icon {
+        display: none;
+    }
+
+    @media screen and (max-width: 425px) {
+        .nav-links {
+            display: none;
+        }
+
+        .mobile-menu-icon {
+            display: inline;
+        }
+    }
 }
 
 .content {
     background-color: $brand-color;
     padding: 35px;
     color: white;
+
+    button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 12px;
+    }
 
     h1 {
         margin: 0;
@@ -63,6 +77,14 @@ button {
 
 .instruction {
     margin: 30px;
+
+    button {
+        background-color: black;
+        color: white;
+        border: none;
+        padding: 12px;
+    }
+
     img {
         width: 120px;
         margin-right: 30px;
@@ -113,6 +135,9 @@ button {
     }
 
     button {
+        background-color: black;
+        color: white;
+        border: none;
         padding: 12px 35px;
     }
 }
