@@ -1,0 +1,31 @@
+import React from "react";
+
+export default function Instruction () {
+    return (
+        <div className="instruction">
+            <h1>How it works</h1>
+            <div className="container">
+                <div>
+                    <img src="https://i.ibb.co/r2PtvdS/pending-clock-icon.png" alt="pending-clock-icon" border="0"/>
+                    <p className="instruction-topic">Pick a package that suits you</p>
+                    <p>You can choose either a "Poetic parting" or a "Farewell with fanfare" kit.</p>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/r2PtvdS/pending-clock-icon.png" alt="pending-clock-icon" border="0"/>
+                    <p className="instruction-topic">We'll send you everything you need</p>
+                    <p>You chosen package will be sent to you, as well as a compostable parcel in which you will play your plant to rest.</p>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/r2PtvdS/pending-clock-icon.png" alt="pending-clock-icon" border="0"/>
+                    <p className="instruction-topic">Send your beloved plant to us</p>
+                    <p>Once you've paid your respects and bagged up your dried up friend, mail it to us using the paid postage label.</p>
+                </div>
+                <div>
+                    <img src="https://i.ibb.co/r2PtvdS/pending-clock-icon.png" alt="pending-clock-icon" border="0"/>
+                    <p className="instruction-topic">We'll take care of the rest!</p>
+                    <p>We compost the whole thing - parcel, plant and all! Once your plants turned into nutritious compost, we will use it to give lift to new trees!</p>
+                </div>
+            </div>
+        </div>
+    )
+}
