@@ -1,0 +1,140 @@
+/* VARIABLES */
+$brand-color: #2B5C2A;
+$button-color: black;
+
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+}
+
+.nav {
+    padding: 18px 35px;
+    color: $brand-color;
+
+    h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    p {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+.content {
+    background-color: $brand-color;
+    padding: 35px;
+    color: white;
+
+    h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .p-container {
+        margin: 30px 0;
+    }
+
+    p:nth-of-type(1){
+        margin-bottom: 20px;
+    }
+}
+
+.instruction {
+    margin: 30px;
+    img {
+        width: 120px;
+        margin-right: 30px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .instruction-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .instruction-container:nth-of-type(4) {
+        margin-bottom: 10px;
+    }
+
+    .btn-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.sign-up {
+    background-color: $brand-color;
+    color: white;
+    padding: 30px;
+    
+    h1 {
+        margin: 0;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .p-container {
+        margin: 40px 0;
+    }
+
+    .btn-container {
+        margin: 50px 0 20px 0;
+    }
+
+    button {
+        padding: 12px 35px;
+    }
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+
+    h1 {
+        font-size: 16px;
+    }
+
+    p {
+        margin: 0;
+    }
+
+    .logo {
+        width: 50px;
+        margin-right: 20px;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .info-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .p-container {
+        margin: 30px 0 40px 0;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}

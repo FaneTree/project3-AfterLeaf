@@ -1,5 +1,4 @@
-import '../App.css';
-
+import '../App.scss';
 
 import NavBar from './main/NavBar'
 import Content from './main/Content'
@@ -13,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      <div className='page'>
           <NavBar />
           <Content />
           <Instruction />
