@@ -8,8 +8,8 @@ export default function NavBar () {
             <ul>
                 <li>About us</li>
                 <li>Our newsletter</li>
-                <li><img src="https://i.ibb.co/1924Z6L/cart.png" alt="cart" border="0"/></li>
             </ul>
+            <a><img src="https://i.ibb.co/1924Z6L/cart.png" alt="cart" border="0"/></a>
         </nav>
     )
 }
