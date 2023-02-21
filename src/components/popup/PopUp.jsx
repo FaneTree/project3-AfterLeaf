@@ -39,10 +39,10 @@ export default function PopUp (props) {
             // A name cannot contain a special character
             const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
 
-            if ( /^\d+$/.test(firstname) || specialChars.test(firstname) ) {
+            if ( /\d/.test(firstname) || specialChars.test(firstname) ) {
                 formErrors.firstname = 'First name cannot contain numbers or special characters';
             }
-            if (/^\d+$/.test(lastname) || specialChars.test(lastname)) {
+            if (/\d/.test(lastname) || specialChars.test(lastname)) {
                 formErrors.lastname = 'Last name cannot contain numbers or special characters';
             }
 
