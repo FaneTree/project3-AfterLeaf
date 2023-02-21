@@ -81,3 +81,23 @@
 
     }
 }
+
+@media (max-width: 800px) {
+    .popup {
+        .popup-inner {
+            max-width: 365px;
+            max-height: 680px;
+            div {
+                form {
+                    grid-template-columns: 1fr;
+                    label {
+                        grid-template-columns: 1fr;
+                        span {
+                            grid-column: 1/2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

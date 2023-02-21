@@ -54,3 +54,12 @@
 
     }
 }
+
+@media (max-width: 800px) {
+    .popup-con {
+        .popup-inner-con {
+            max-width: 365px;
+            max-height: 680px;
+        }
+    }
+}
