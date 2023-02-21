@@ -12,17 +12,91 @@
     .popup-inner {
         position: relative;
         top: 50px;
-        padding: 32px;
         width: 100%;
-        max-width: 640px;
+        max-width: 980px;
         max-height: 500px;
-        background-color: #FFF;
-        color: black;
-        form {
-            close-btn{
-                position: absolute;
-                top: 16px;
-                right: 16px;
+        background-color: #404040;
+        color: #FFFFFF;
+        display: grid;
+        grid-template-rows: auto 1fr;
+        gap: 10px;
+        a {
+            justify-items: flex-end;
+            img {
+                margin: 10px;
+                float: right;
+            }
+        }
+        div {
+            .block {
+                margin: 0 50px;
+                margin-bottom: 30px;
+                h1 {
+                    font-weight: bold;
+                    font-size: 30px;
+                    margin-bottom: 1em;
+                }
+                div{
+                    p {
+                        font-size: 16px;
+                        margin: 0;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                }
+            }
+            form {
+                margin: 0 50px;
+                display: grid;
+                grid-template-rows: repeat(6, auto);
+                gap: 30px;
+                label {
+                    font-weight: bold;
+                    font-size: 20px;
+                    display: grid;
+                    grid-template-columns: 0.2fr 1fr;
+                    textarea {
+                        height: 27px;
+                    }
+                    span {
+                        grid-column: 2/3;
+                        font-size: 14px;
+                        color: #FF2E2E;
+                    }
+                }
+                div {
+                    display: flex;
+                    justify-content: flex-end;
+                    .close-btn {
+                        background-color: #2B5C2A;
+                        color: #FFFFFF;
+                        width: 164px;
+                        height: 51.25px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+@media (max-width: 800px) {
+    .popup {
+        .popup-inner {
+            max-width: 365px;
+            max-height: 680px;
+            div {
+                form {
+                    grid-template-columns: 1fr;
+                    label {
+                        grid-template-columns: 1fr;
+                        span {
+                            grid-column: 1/2;
+                        }
+                    }
+                }
             }
         }
     }

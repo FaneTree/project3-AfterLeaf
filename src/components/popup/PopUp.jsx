@@ -36,20 +36,14 @@ export default function PopUp (props) {
             }
 
             // A name cannot contain a number
-            if ( /^\d+$/.test(firstname) ) {
-                formErrors.firstname = 'First name cannot contain numbers or special characters';
-            }
-            if (/^\d+$/.test(lastname)) {
-                formErrors.lastname = 'Last name cannot contain a number';
-            }
-
             // A name cannot contain a special character
             const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-            if ( specialChars.test(firstname) ) {
-                formErrors.firstname = 'First name cannot contain a special character';
+
+            if ( /\d/.test(firstname) || specialChars.test(firstname) ) {
+                formErrors.firstname = 'First name cannot contain numbers or special characters';
             }
-            if ( specialChars.test(lastname)) {
-                formErrors.lastname = 'Last name cannot contain a special character';
+            if (/\d/.test(lastname) || specialChars.test(lastname)) {
+                formErrors.lastname = 'Last name cannot contain numbers or special characters';
             }
 
             // A name must be at least two letters
@@ -70,7 +64,7 @@ export default function PopUp (props) {
             // }
 
             // An email address must contain exactly one @
-            if (!email.includes("@") && ((email.match(/@/g) || []).length > 1)) {
+            if (!email.includes("@") || ((email.match(/@/g) || []).length > 1)) {
                 formErrors.email = 'Email address must contain exactly one @';
             }
 
@@ -80,12 +74,14 @@ export default function PopUp (props) {
             }
 
         setErrors(formErrors);
+        console.log(formErrors);
 
         if (Object.keys(formErrors).length === 0) {
-            props.exit();
             setFirstname('');
             setLastname('');
             setEmail('');
+            setErrors({});
+            props.handle(event);
         }
     };
 
@@ -93,38 +89,42 @@ export default function PopUp (props) {
         <div className = 'popup'>
             <div className = 'popup-inner'>
                 <a onClick = { props.exit } >
-                    <img src="https://i.ibb.co/2g5yDDs/vecteezy-x-png-transparent-9344493-556.png" alt="vecteezy-x-png-transparent-9344493-556" border="0" width = '20' height = '20'/>
+                    <img src="x.png" alt="x" border="0" width = '15' height = '15'/>
                 </a>
 
                 <div>
-                    <h1>Thank you for signing up!</h1>
-                    <div>
-                        <p>We just need your name and email.</p>
-                        <p>They will be kept confidential, and will onlt be used to send you your newsletter.</p>
+                    <div className = 'block'>
+                        <h1>Thank you for signing up!</h1>
+                        <div>
+                            <p>We just need your name and email.</p>
+                            <p>They will be kept confidential, and will onlt be used to send you your newsletter.</p>
+                        </div>
+                        <p>All fileds are required and marked with an asterisk (*)</p>
                     </div>
-                    <p>All fileds are required and marked with an asterisk (*)</p>
-                </div>
 
-                {/* // check the conditions and submit => exit popup to confirmation */}
-                <form onSubmit = {_handleSubmit} > 
-                    <label>
-                        First name*
-                        <textarea type="text" name="name" value={firstname}  onChange={_handleFirstNameChange}></textarea>
-                        {errors.firstname && <span className = 'error-msg'>{errors.firstname}</span>}
-                    </label>
-                    <label>
-                        Last name*
-                        <textarea type="text" name="name" value={lastname}  onChange={_handleLastNameChange}></textarea>
-                        {errors.lastname && <span className = 'error-msg'>{errors.lastname}</span>}
-                    </label>
-                    <label>
-                        Email*
-                        <textarea type="text" name="name" value={email}  onChange={_handleEmailChange}></textarea>
-                        {errors.email && <span className = 'error-msg'>{errors.email}</span>}
-                    </label>
-                    
-                    <input className = "close-btn" type = "submit" value ="Sign Up"/>
-                </form>
+                    {/* // check the conditions and submit => exit popup to confirmation */}
+                    <form onSubmit = {_handleSubmit} > 
+                        <label>
+                            First name*
+                            <textarea type="text" name="name" value={firstname}  onChange={_handleFirstNameChange}></textarea>
+                            {errors.firstname && <span className = 'error-msg'>{errors.firstname}</span>}
+                        </label>
+                        <label>
+                            Last name*
+                            <textarea type="text" name="name" value={lastname}  onChange={_handleLastNameChange}></textarea>
+                            {errors.lastname && <span className = 'error-msg'>{errors.lastname}</span>}
+                        </label>
+                        <label>
+                            Email*
+                            <textarea type="text" name="name" value={email}  onChange={_handleEmailChange}></textarea>
+                            {errors.email && <span className = 'error-msg'>{errors.email}</span>}
+                        </label>
+                        <div>
+                            <input className = "close-btn" type = "submit" value ="Sign Up"/>
+                        </div>
+                        
+                    </form>
+                </div>
             </div>
         </div>
     ) : "" ;
