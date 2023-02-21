@@ -33,11 +33,14 @@ export default function Footer () {
                             We acknowledge the original custodians of this land. We pay our respects to elders past, present and emerging. This always was, and always will be, Aboriginal Land.
                         </p>
                     </div>
-                    <div>
+                    <div className="socials-container">
                         <h2>Find us on socials</h2>
-                        <img className="logo" src="facebook.png" alt="facebook logo" border="0"/>
-                        <img className="logo" src="instagram.png" alt="instagram logo" border="0"/>
-                        <img className="logo" src="twitter.png" alt="twitter logo" border="0"/>
+                        <div className="icons-container">
+                            <img className="logo" src="facebook.png" alt="facebook logo" border="0"/>
+                            <img className="logo" src="instagram.png" alt="instagram logo" border="0"/>
+                            <img className="logo" src="twitter.png" alt="twitter logo" border="0"/>
+                        </div>
+                        
                     </div>
                 </div>
             </div>

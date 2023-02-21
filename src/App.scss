@@ -295,11 +295,24 @@ $button-color: black;
 
         .about-container, .help-container {
             margin: 0 20px;
-            width: 200px;
+            width: 150px;
         }
 
         .right-container {
             align-items: flex-start;
+            margin: 0 20px;
+        }
+
+        .p-container {
+            margin-top: 0;
+        }
+
+        .socials-container {
+            display: flex;
+        }
+
+        .icons-container {
+            margin-left: 30px;
         }
     }
 }
