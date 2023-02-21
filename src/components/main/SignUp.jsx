@@ -29,7 +29,8 @@ export default function SignUp () {
 
     return (
         <div className="sign-up">
-            <h1>Sign up to our <br /> newsletter</h1>
+            <img src="phone.png" alt="phone" border="0"/>
+            {/* <h1>Sign up to our <br /> newsletter</h1> */}
             <h2>Find out what your plants are up to in their after leaf!</h2>
 
             <div className="p-container">
