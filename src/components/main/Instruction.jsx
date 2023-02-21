@@ -8,7 +8,7 @@ export default function Instruction () {
             <div className="instruction-container">
                 <img src="1.jpg" alt="dead plant" border="0"/>
                 <div>
-                    <p className="instruction-topic">Pick a package that suits you</p>
+                    <p className="instruction-topic">Pick a kit that suits you</p>
                     <p>You can choose either a "Poetic parting" or a "Farewell with fanfare" kit.</p>
                 </div>
             </div>
@@ -16,7 +16,7 @@ export default function Instruction () {
                 <img src="2.jpeg" alt="cardboard box" border="0"/>
                 <div>
                     <p className="instruction-topic">We'll send you everything you need</p>
-                    <p>You chosen package will be sent to you, as well as a compostable parcel in which you will play your plant to rest.</p>
+                    <p>You chosen package will be sent to you, as well as a compostable parcel in which you will place you plant to rest.</p>
                 </div>
             </div>
             <div className="instruction-container">
@@ -30,7 +30,7 @@ export default function Instruction () {
                 <img src="4.png" alt="thumbs up" border="0"/>
                 <div>
                     <p className="instruction-topic">We'll take care of the rest!</p>
-                    <p>We compost the whole thing - parcel, plant and all! Once your plants turned into nutritious compost, we will use it to give lift to new trees!</p>
+                    <p>We compost the whole thing - parcel, plant and all! Once your plants turned into nutritious compost, we will use it to give life to new trees!</p>
                 </div>
             </div>
 
