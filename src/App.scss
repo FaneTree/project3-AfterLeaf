@@ -10,6 +10,9 @@ $button-color: black;
 .nav {
     padding: 18px 35px;
     color: $brand-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     h1 {
         margin: 0;
@@ -22,7 +25,7 @@ $button-color: black;
         display: flex;
         justify-content: space-around;
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
         list-style-type: none;
         li {
             text-decoration: none;
@@ -34,19 +37,70 @@ $button-color: black;
         font-size: 18px;
     }
 
-    .mobile-menu-icon {
+    .nav-icon {
         display: none;
     }
 
-    @media screen and (max-width: 425px) {
-        .nav-links {
-            display: none;
+    @media screen and (max-width: 600px) {
+        .nav-menu {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 118px;
+            left: -110%;
+            color: white;
+            padding: 20px;
         }
 
-        .mobile-menu-icon {
-            display: inline;
+        .nav-menu.active {
+            background-color: black;
+            left: 0;
+            transition: all 0.5s ease;
+        }
+
+        .nav-icon {
+            display: block;
         }
     }
+
+    // .nav-btn {
+    //     visibility: hidden;
+    //     opacity: 0;
+    // }
+
+    // @media screen and (max-width: 600px) {
+    //     .nav-btn {
+    //         visibility: visible;
+    //         opacity: 1;
+    //     }
+
+    //     nav {
+    //         position: absolute;
+    //         top: 118px;
+    //         left: 0;
+    //         height: 30%;
+    //         width: 100%;
+    //         display: flex ;
+    //         align-items: center;
+    //         justify-content: center;
+    //         gap: 1.5rem;
+    //         background-color: red;
+
+    //     }
+
+    //     ul {
+    //         flex-direction: column;
+    //     }
+
+    //     .nav-container {
+    //         display: flex;
+    //     }
+
+    //     .responsive-nav {
+    //         transform: none;
+    //     }
+    // }
 }
 
 .content {
