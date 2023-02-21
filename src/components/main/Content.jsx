@@ -19,7 +19,7 @@ export default function Content () {
                     </p>
                 </div>
                 
-
+                <img src="Content.png" alt="CEO" border="0"/>
                 <button>Choose your memorial kit</button>
             </div>
         </div>

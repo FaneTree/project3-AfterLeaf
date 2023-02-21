@@ -1,12 +1,11 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import '../App.scss';
 
 import NavBar from './main/NavBar'
-import Content from './main/Content'
-import Instruction from './main/Instruction'
-import SignUp from './main/SignUp'
-import Footer from './main/Footer'
 
-import Admin from './admin/Admin'
+import Home from './Home'
+import AboutRoute from './about/AboutRoute'
 
 function App() {
 
@@ -14,10 +13,10 @@ function App() {
     <div className="App">
       <div className='page'>
           <NavBar />
-          <Content />
-          <Instruction />
-          <SignUp />
-          <Footer />
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/about" element={<AboutRoute />} />
+            </Routes>
       </div>
     </div>
   );
