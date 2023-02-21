@@ -3,6 +3,7 @@ import React, { useState } from "react";
 export default function About () {
     return (
         <div className = 'content'>
+            <img src="CEO.png" alt="CEO" border="0"/>
             <h1>About AfterLeaf</h1>
             <div className="p-container">
                 <p>Where do we begin?</p>
@@ -11,7 +12,6 @@ export default function About () {
                 <p>(Plant) lives were lost, tears were shed, but hope was never lost. The biggest concern for Nicole was where this precious plant matter was going. If they were going to a good place and giving new life else where, the loss wouldn't be as great</p>
                 <p>This was essential how AfterLeaf was born</p>
             </div>
-            <img src="CEO.png" alt="CEO" border="0"/>
         </div>
     )
 }
