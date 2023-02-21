@@ -4,7 +4,6 @@ export default function Content () {
     return (
         <div className = 'content'>
             <div>
-
                 <div className="content-container">
 
                     <div className="text-container">
@@ -30,10 +29,6 @@ export default function Content () {
                     
                 </div>
                 
-                
-                
-                
-
                 <div className="btn-container">
                     <button>Choose your memorial kit</button>
                 </div>
