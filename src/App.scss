@@ -42,7 +42,7 @@ $button-color: black;
         display: none;
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 768px) {
         .nav-menu {
             display: flex;
             flex-direction: column;
@@ -65,43 +65,6 @@ $button-color: black;
         }
     }
 
-    // .nav-btn {
-    //     visibility: hidden;
-    //     opacity: 0;
-    // }
-
-    // @media screen and (max-width: 600px) {
-    //     .nav-btn {
-    //         visibility: visible;
-    //         opacity: 1;
-    //     }
-
-    //     nav {
-    //         position: absolute;
-    //         top: 118px;
-    //         left: 0;
-    //         height: 30%;
-    //         width: 100%;
-    //         display: flex ;
-    //         align-items: center;
-    //         justify-content: center;
-    //         gap: 1.5rem;
-    //         background-color: red;
-
-    //     }
-
-    //     ul {
-    //         flex-direction: column;
-    //     }
-
-    //     .nav-container {
-    //         display: flex;
-    //     }
-
-    //     .responsive-nav {
-    //         transform: none;
-    //     }
-    // }
 }
 
 .content {
@@ -116,6 +79,15 @@ $button-color: black;
         padding: 12px;
     }
 
+    .btn-container, .img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-container {
+        margin-bottom: 30px;
+    }
+
     h1 {
         margin: 0;
         font-size: 24px;
@@ -127,6 +99,25 @@ $button-color: black;
 
     p:nth-of-type(1){
         margin-bottom: 20px;
+    }
+
+    img {
+        width: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .content-container {
+            display: flex;
+        }
+
+        img {
+            margin-left: 30px;
+        }
+
+        .btn-container {
+            justify-content: left;
+        }
+
     }
 }
 
@@ -163,6 +154,31 @@ $button-color: black;
         display: flex;
         justify-content: center;
     }
+
+    .content-container {
+        margin: 30px 0;
+    }
+
+    p:nth-of-type(1) {
+        font-weight: bold;
+    }
+
+    @media screen and (min-width: 768px) {
+
+        .instruction-container {
+            flex-direction: column;
+            margin: 0 10px;
+
+            p {
+                text-align: center;
+            }
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
 
 .sign-up {
@@ -178,7 +194,7 @@ $button-color: black;
 
     h2 {
         font-size: 20px;
-        font-weight: 400;
+
     }
 
     .p-container {
@@ -194,6 +210,32 @@ $button-color: black;
         color: white;
         border: none;
         padding: 12px 35px;
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text-container {
+        margin-top: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .img-container {
+            justify-content: left;
+        } 
+
+        .content-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .img-container, .text-container {
+            margin: 0 20px
+        }
+
+        
     }
 }
 
@@ -225,7 +267,7 @@ $button-color: black;
 
     .info-container {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
     }
 
     .p-container {
@@ -235,6 +277,19 @@ $button-color: black;
     h2 {
         font-size: 18px;
     }
-}
 
-@media (min-width: 320px) {}
+    @media screen and (min-width: 768px) {
+        .split-container {
+            display: flex;
+        }
+
+        .about-container, .help-container {
+            margin: 0 20px;
+            width: 200px;
+        }
+
+        .right-container {
+            align-items: flex-start;
+        }
+    }
+}
