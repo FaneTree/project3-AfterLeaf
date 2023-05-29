@@ -56,11 +56,6 @@ export default function SignUp () {
                 </div>
             </div>
 
-            
-            
-            
-            
-            
             <PopUp handle = {_handleConfirmation} trigger = {signUp} exit = {_handleBack} />
             <Confirmation handle = {_handleBack} trigger = {confirmation} exit = {_handleBack} /> 
 

@@ -32,7 +32,6 @@ export default function Content () {
                 <div className="btn-container">
                     <button>Choose your memorial kit</button>
                 </div>
-                
             </div>
         </div>
     )
