@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+<a href="https://harmonious-sunshine-7478e1.netlify.app/">
+    <img src="./public/readme1.png" alt="AfterLeaf logo" title="AfterLeaf" align="right" height="50" />
+</a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# :seedling: AfterLeaf
+[AfterLeaf](https://harmonious-sunshine-7478e1.netlify.app/) help you give your plants a heartfelt memorial
+before you send them to us to be composted.
 
-## Available Scripts
+You get closure. We give them new life by nourishing our forests and bushlands. You feel okay about killing your plans. It's a win, win, win!
 
-In the project directory, you can run:
+## About this project
+- This is 2 days challenge to collaborate with UX/UI as a team to create the website as a design
+- The challenge includes a design brief and also the presentation
+- Figma: https://www.figma.com/file/ZIH2YxFfHlCWw6p9KNceDo/Collabathon---AfterLeaf?type=design&node-id=1-2
+- Project details: https://docs.google.com/document/d/1E5x-oPAeO5AJ3TIPUc3zCNJzl6Zpv-H6pw0PtdArpeM/edit
 
-### `npm start`
+## Built with
+- React.js
+- HTML
+- CSS/SCSS
+- Deployed on Netlify
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Snapshots
+|Desktop|Mobile|
+|:-:|:-:|
+| <img src="./public/desktop.gif" border="0"/> | <img src="./public/mobile.gif" border="0"/> |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
+## :bell: Put it all together
 
-### `npm test`
+### :bulb: Features:
+- Popup component and confirmation.
+- Mobile friendly.
+- There are sign-up interfaces which match The required conditions:
+  ```
+  - A first and last name is required
+  - A name cannot contain a number
+  - A name cannot contain a special character
+  - A name must be at least two letters
+  - An email address is required        
+  - An email address must contain exactly one @
+  - An email address must contain at least one full stop (.)
+  ```
+  Form to check the above conditions.
+    ```JavaScript
+    <form onSubmit = {_handleSubmit} > 
+        <label>
+            First name*
+            <textarea type="text" name="name" value={firstname}  onChange={_handleFirstNameChange}></textarea>
+            {errors.firstname && <span className = 'error-msg'>{errors.firstname}</span>}
+        </label>
+        <label>
+            Last name*
+            <textarea type="text" name="name" value={lastname}  onChange={_handleLastNameChange}></textarea>
+            {errors.lastname && <span className = 'error-msg'>{errors.lastname}</span>}
+        </label>
+        <label>
+            Email*
+            <textarea type="text" name="name" value={email}  onChange={_handleEmailChange}></textarea>
+            {errors.email && <span className = 'error-msg'>{errors.email}</span>}
+        </label>
+        <div>
+            <input className = "close-btn" type = "submit" value ="Sign Up"/>
+        </div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    </form>
+    ```
+    
+### :spiral_calendar: Challenges:
+- About us and home pages as it was 2 days challenge, adjusting CSS took most of the time spent.
+- Component design for the time spent was challenging as it should be simple together with achieving the requirements.
+- Hamburger icon to wrap all navbar contents when changing to the mobile screen.
 
-### `npm run build`
+### :book: Lessons:
+- When there are limited time and resources, what we should do is prioritising.
+- It was fun working with UX/UI team and got more understanding of how they think, what they value, and the way they design.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### :bookmark: Future updates:
+- Create a backend utilising Firebase, Supabase, or any providers.
+- Reorganise the interface to match the figma design.
+- Add more features and improve the code on the sign-up part.
